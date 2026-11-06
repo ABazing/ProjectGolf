@@ -1,0 +1,5 @@
+name=Project Golf - Viewpoint Ball
+id=ProjectGolfViewpoint
+require=ProjectGolf,Viewpoint
+poster=poster.png
+description=Optional. Draws the golf ball, its shadow and the aim line in real 3D in Viewpoint first and third person: they sit on the terrain and hide behind hills and walls. Works with Viewpoint 0.1.6 and 0.1.7+. Needs Project Golf and Viewpoint.

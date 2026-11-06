@@ -1,0 +1,25 @@
+VERSION = 1,
+
+option ProjectGolf.MoodBoost
+{
+    type = boolean,
+    default = true,
+    page = ProjectGolf,
+    translation = ProjectGolf_MoodBoost,
+}
+
+option ProjectGolf.AimingXP
+{
+    type = boolean,
+    default = true,
+    page = ProjectGolf,
+    translation = ProjectGolf_AimingXP,
+}
+
+option ProjectGolf.AimingSkill
+{
+    type = boolean,
+    default = true,
+    page = ProjectGolf,
+    translation = ProjectGolf_AimingSkill,
+}

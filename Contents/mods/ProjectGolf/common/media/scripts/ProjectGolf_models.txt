@@ -1,0 +1,17 @@
+module ProjectGolf
+{
+    imports
+    {
+        Base
+    }
+
+    /* Tee marker on the ground: vanilla's baseball mesh, scaled up and painted tee-marker blue.
+       Swap the texture (media/textures/WorldItems/ProjectGolf_TeeMarker.png) for another colour,
+       or change scale to make the markers bigger or smaller (vanilla's baseball is 0.4). */
+    model TeeMarker
+    {
+        mesh = WorldItems/BaseBall,
+        texture = WorldItems/ProjectGolf_TeeMarker,
+        scale = 0.8,
+    }
+}

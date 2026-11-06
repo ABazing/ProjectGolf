@@ -1,0 +1,138 @@
+{
+  "folders": [
+    {
+      "name": "Project Golf",
+      "path": "."
+    },
+    {
+      "name": "Viewpoint (reference, read-only)",
+      "path": "../Viewpoint"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "**/media/scripts/**/*.txt": "properties",
+      "mod.info": "properties",
+      "workshop.txt": "properties"
+    },
+    "files.eol": "\n",
+    "files.exclude": {
+      "**/*.zip": true,
+      "addon-src/build": true,
+      "addon-src/.gradle": true
+    },
+    "search.exclude": {
+      "**/*.ogg": true,
+      "**/*.png": true
+    },
+    "[lua]": {
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true
+    },
+    "files.readonlyInclude": {
+      "**/Workshop/Viewpoint/**": true
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Golf: build 3D ball addon",
+        "detail": "Compiles ball.jar against your Viewpoint.jar and copies it into the ProjectGolfViewpoint mod.",
+        "type": "shell",
+        "command": ".\\gradlew.bat build",
+        "options": {
+          "cwd": "${workspaceFolder:Project Golf}/addon-src",
+          "shell": {
+            "executable": "powershell.exe",
+            "args": [
+              "-NoProfile",
+              "-Command"
+            ]
+          }
+        },
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "presentation": {
+          "panel": "dedicated",
+          "reveal": "always",
+          "clear": true
+        }
+      },
+      {
+        "label": "Golf: watch game log (live)",
+        "detail": "Follows Zomboid\\console.txt and shows only Project Golf lines and their stack traces.",
+        "type": "shell",
+        "command": "Get-Content -Path \"$env:USERPROFILE\\Zomboid\\console.txt\" -Wait -Tail 0 | Select-String -Pattern 'ProjectGolf|Project Golf|PG_' -Context 0,6",
+        "options": {
+          "shell": {
+            "executable": "powershell.exe",
+            "args": [
+              "-NoProfile",
+              "-Command"
+            ]
+          }
+        },
+        "isBackground": true,
+        "problemMatcher": [],
+        "presentation": {
+          "panel": "dedicated",
+          "reveal": "always",
+          "clear": true
+        }
+      },
+      {
+        "label": "Golf: errors from the last session",
+        "detail": "Lists Project Golf errors in the last console.txt with the lines around them.",
+        "type": "shell",
+        "command": "Select-String -Path \"$env:USERPROFILE\\Zomboid\\console.txt\" -Pattern 'ERROR.*Project Golf|\\[ProjectGolf\\]' -Context 0,4 | Select-Object -First 20",
+        "options": {
+          "shell": {
+            "executable": "powershell.exe",
+            "args": [
+              "-NoProfile",
+              "-Command"
+            ]
+          }
+        },
+        "problemMatcher": [],
+        "presentation": {
+          "panel": "dedicated",
+          "reveal": "always",
+          "clear": true
+        }
+      },
+      {
+        "label": "Golf: run offline tests",
+        "detail": "Needs a Lua 5.1+ interpreter named 'lua' on PATH (e.g. winget install DEVCOM.Lua).",
+        "type": "shell",
+        "command": "${workspaceFolder:Project Golf}/tests/run.ps1",
+        "options": {
+          "shell": {
+            "executable": "powershell.exe",
+            "args": [
+              "-NoProfile",
+              "-ExecutionPolicy",
+              "Bypass",
+              "-Command"
+            ]
+          }
+        },
+        "problemMatcher": [],
+        "group": {
+          "kind": "test",
+          "isDefault": true
+        }
+      }
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "sumneko.lua",
+      "vscjava.vscode-java-pack"
+    ]
+  }
+}

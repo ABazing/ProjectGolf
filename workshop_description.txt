@@ -1,0 +1,91 @@
+[h1]Project Golf[/h1]
+[b]Real golf in the apocalypse.[/b] Tee up, read the green, sink the putt - and keep an eye on the treeline, because the zombies can hear your swing.
+
+>>> IMAGE: first-person drive down the fairway <<<
+
+[h2]How to play[/h2]
+[olist]
+[*][b]Tee up[/b] - right-click a golf ball in your inventory and choose [b]Tee up golf ball[/b]. It goes down and you step up to it.
+[*][b]Aim[/b] - with the mouse, or simply look where you want to hit in Viewpoint first / third person.
+[*][b]Swing[/b] - hold left mouse to fill the power meter, let go to hit. Mouse wheel or 1 / 2 / 3 switches club.
+[*][b]Sink it[/b] - the ball has to roll in gently. Too firm and it lips out!
+[/olist]
+Any golf ball on the ground works too: right-click it and choose [b]Golf > Putt, Chip or Drive[/b].
+
+[h2]Three clubs, one swing[/h2]
+[list]
+[*][b]Putt[/b] - rolls along the ground, for the green.
+[*][b]Chip[/b] - high and soft, stops quickly.
+[*][b]Drive[/b] - long and low, off the tee and down the fairway.
+[*]A dotted line previews the shot, and a [b]gold marker[/b] on the meter shows the power that reaches the hole.
+[*][b]Don't overswing![/b] Past the red line the ball sprays, and you might shank, slice or hook it.
+[/list]
+
+[h2]Real ball physics[/h2]
+The ball bounces, rolls further on roads than on grass, slows in the rough, comes back off walls, gets caught by trees - and water swallows it for a one-stroke penalty. Every shot shows its distance and your stroke count.
+
+[h2]West Maple Country Club[/h2]
+Play all 18 holes of the real course in Muldraugh.
+[list]
+[*]Mown [b]tee boxes[/b] with tee markers on every hole, and the cups the map is missing added.
+[*]Right-click a tee box: [b]Golf > Tee off[/b] - you step up with the Driver (the Chip on a par 3).
+[*]The aim screen shows the hole, its par and the distance to the pin.
+[*]Sink it and get your score called: [i]Birdie! Eagle! Bogey...[/i] - and of course [b]HOLE IN ONE![/b]
+[/list]
+
+>>> IMAGE: the scorecard <<<
+
+[h2]Tips & Scorecard[/h2]
+With a golf club, right-click anywhere: [b]Golf > Tips / Scorecard[/b].
+[list]
+[*]Your card fills in by itself as you sink holes: score, best per hole, Out / In / Total against par, and your best full round.
+[*]Teeing off on hole 1 starts a new card. [b]Edit scores[/b] fixes a wrong one.
+[*]The Tips page explains the clubs, the marker, the skills and the course.
+[/list]
+
+[h2]Skills that matter[/h2]
+[list]
+[*][b]Aiming[/b] makes you a better golfer: straighter shots, fewer mishits when you overswing, more of the aim line to read, and an exact power marker from level 7. New golfers only see the start of the line and a rough marker.
+[*][b]Strength[/b] adds distance to chips and drives.
+[*][b]Golf trains Aiming[/b] - a little XP for every shot, more for sinking it.
+[/list]
+
+[h2]Life on the course[/h2]
+[list]
+[*][b]Zombies hear you[/b] - every swing makes noise. Choose your moment.
+[*][b]Golf is relaxing[/b] - every round eases boredom and unhappiness. Losing a ball in the water... less so.
+[*][b]Lost your ball?[/b] Hold a golf club and turn on search (foraging) mode to spot golf balls nearby.
+[/list]
+
+>>> IMAGE: isometric putt with the flag <<<
+
+[h2]Golf anywhere[/h2]
+Craft a [b]Golf Hole[/b] (empty tin can + plank + ripped sheets) and place it in your backyard, a park or a parking lot - pick it up again any time. Tee up anywhere off the course and you start with the putter: perfect for practising at home.
+
+[h2]Isometric and Viewpoint[/h2]
+[list]
+[*]Plays great in the classic [b]isometric[/b] view.
+[*]Full [b]Viewpoint[/b] support in first and third person (Viewpoint 0.1.6 and 0.1.7+): aim where you look, with the shot following the terrain.
+[*]Enable the optional [b]Project Golf - Viewpoint Ball[/b] for a real 3D ball, shadow and aim line that hide behind hills and walls.
+[/list]
+
+[h2]Settings[/h2]
+[b]Sandbox:[/b] Golf lifts mood - Golf trains Aiming - Aiming affects golf (all on by default).
+[b]Mod Options:[/b] show the trajectory preview - 3D ball in Viewpoint.
+
+[h2]Requirements & compatibility[/h2]
+[list]
+[*][b]Build 42[/b] only.
+[*]Uses the vanilla golf club and golf balls - find them in golf stores, clubhouses and sports shops.
+[*]Viewpoint is optional. On Viewpoint 0.1.6 the 3D features run through ZombieBuddy, which Viewpoint 0.1.6 already needs.
+[*]Multiplayer: the server runs every shot, so everyone sees the same ball fly.
+[/list]
+
+[h2]Coming later[/h2]
+Wellington Heights Golf Club as a second tracked course.
+
+[h2]Found a bug?[/h2]
+Leave a comment with the lines starting with [b][ProjectGolf[/b] from your [b]console.txt[/b] (in your Zomboid folder) - that helps the most.
+
+[hr][/hr]
+Mod IDs: [b]ProjectGolf[/b] (required), [b]ProjectGolfViewpoint[/b] (optional, needs Viewpoint)

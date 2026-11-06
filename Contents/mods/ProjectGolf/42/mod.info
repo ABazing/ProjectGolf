@@ -1,0 +1,6 @@
+name=Project Golf
+id=ProjectGolf
+poster=poster.png
+description=Place a golf ball, right-click it with a golf club in your inventory, and putt, chip or drive.
+javaJarFile=media/java/client/ProjectGolfVP16.jar
+javaPkgName=projectgolf.vp16

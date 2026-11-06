@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema.json",
+  "runtime.version": "Lua 5.1",
+  "runtime.path": [
+    "Contents/mods/ProjectGolf/common/media/lua/shared/?.lua",
+    "Contents/mods/ProjectGolf/common/media/lua/client/?.lua",
+    "Contents/mods/ProjectGolf/common/media/lua/server/?.lua"
+  ],
+  "workspace.checkThirdParty": false,
+  "workspace.ignoreDir": ["tests"],
+  "diagnostics.globals": [
+    "ProjectGolf", "PG_AimUI", "PG_FlightOverlay", "ISGolfStance",
+    "Events", "ISUIElement", "ISBaseTimedAction", "ISTimedActionQueue", "ISContextMenu",
+    "ISWorldObjectContextMenu", "ISInventoryPaneContextMenu", "ISDropWorldItemAction", "luautils",
+    "getCell", "getCore", "getPlayer", "getSpecificPlayer", "getTexture", "getSoundManager", "getTimestampMs",
+    "isClient", "isServer", "sendClientCommand", "sendServerCommand", "instanceof", "ZombRand", "addSound",
+    "isoToScreenX", "isoToScreenY", "screenToIsoX", "screenToIsoY", "getMouseX", "getMouseY",
+    "Keyboard", "UIFont", "IsoFlagType", "CharacterStat", "HaloTextHelper", "PZAPI", "Viewpoint"
+  ],
+  "diagnostics.disable": ["lowercase-global", "undefined-field", "need-check-nil"]
+}

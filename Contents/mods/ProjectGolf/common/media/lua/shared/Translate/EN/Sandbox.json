@@ -1,0 +1,9 @@
+{
+    "Sandbox_ProjectGolf": "Project Golf",
+    "Sandbox_ProjectGolf_MoodBoost": "Golf lifts mood",
+    "Sandbox_ProjectGolf_MoodBoost_tooltip": "Each swing lowers boredom and unhappiness a little; sinking a putt lowers them more. Losing a ball in water is a little upsetting.",
+    "Sandbox_ProjectGolf_AimingXP": "Golf trains Aiming",
+    "Sandbox_ProjectGolf_AimingXP_tooltip": "A small amount of Aiming XP for each shot, and a bit more for sinking it.",
+    "Sandbox_ProjectGolf_AimingSkill": "Aiming affects golf",
+    "Sandbox_ProjectGolf_AimingSkill_tooltip": "Higher Aiming makes shots more accurate and overswings less likely to mishit. Low Aiming shows only part of the preview line and a rough power-to-hole marker; the full line comes at level 6 and an exact marker at level 7."
+}

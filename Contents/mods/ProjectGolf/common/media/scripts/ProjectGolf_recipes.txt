@@ -1,0 +1,24 @@
+module ProjectGolf
+{
+    imports
+    {
+        Base
+    }
+
+    craftRecipe MakeGolfFlag
+    {
+        Time = 80,
+        Tags = InHandCraft;CanBeDoneInDark,
+        category = Miscellaneous,
+        inputs
+        {
+            item 1 [Base.TinCanEmpty],
+            item 1 [Base.Plank],
+            item 1 [Base.RippedSheets],
+        }
+        outputs
+        {
+            item 1 ProjectGolf.GolfFlag,
+        }
+    }
+}

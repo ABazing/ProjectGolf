@@ -1,0 +1,30 @@
+module ProjectGolf
+{
+    imports
+    {
+        Base
+    }
+
+    /* Right-click the ground with this in your inventory: Golf > Place golf hole here. It becomes a real golf hole tile
+       (recreational_sports_01_48) that can be picked up again. Dropped on the floor it also works as a cup. */
+    item GolfFlag
+    {
+        DisplayName = Golf Hole,
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 0.8,
+        Icon = GolfFlag,
+        Tooltip = Tooltip_ProjectGolf_GolfHole,
+    }
+
+    /* Placed on course tee boxes by the course builder; can be picked up like any item. */
+    item TeeMarker
+    {
+        DisplayName = Tee Marker,
+        DisplayCategory = Sports,
+        ItemType = base:normal,
+        Weight = 0.3,
+        Icon = TeeMarker,
+        WorldStaticModel = ProjectGolf.TeeMarker,
+    }
+}

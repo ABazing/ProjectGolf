@@ -1,0 +1,25 @@
+module ProjectGolf
+{
+    /* chips and drives: one of the three hits, picked at random each time */
+    sound ProjectGolf_Drive
+    {
+        category = Item,
+        clip { file = media/sound/ProjectGolf/hit_1.ogg, distanceMax = 30, volume = 1.0, }
+        clip { file = media/sound/ProjectGolf/hit_2.ogg, distanceMax = 30, volume = 1.0, }
+        clip { file = media/sound/ProjectGolf/hit_3.ogg, distanceMax = 30, volume = 1.0, }
+    }
+    /* swung past the red line (overswing): plays together with the normal hit */
+    sound ProjectGolf_Overhit { category = Item, clip { file = media/sound/ProjectGolf/overhit.ogg, distanceMax = 30, volume = 1.0, } }
+    sound ProjectGolf_Putt   { category = Item, clip { file = media/sound/ProjectGolf/putt.ogg,   distanceMax = 12, volume = 0.8, } }
+    /* bounces (also walls, zombies and lip-outs): one of three, at random */
+    sound ProjectGolf_Bounce
+    {
+        category = Item,
+        clip { file = media/sound/ProjectGolf/bounce_1.ogg, distanceMax = 15, volume = 0.8, }
+        clip { file = media/sound/ProjectGolf/bounce_2.ogg, distanceMax = 15, volume = 0.8, }
+        clip { file = media/sound/ProjectGolf/bounce_3.ogg, distanceMax = 15, volume = 0.8, }
+    }
+    sound ProjectGolf_Tree   { category = Item, clip { file = media/sound/ProjectGolf/tree.ogg,   distanceMax = 20, volume = 0.8, } }
+    sound ProjectGolf_Cup    { category = Item, clip { file = media/sound/ProjectGolf/cup.ogg,    distanceMax = 20, volume = 1.0, } }
+    sound ProjectGolf_Splash { category = Item, clip { file = media/sound/ProjectGolf/splash.ogg, distanceMax = 20, volume = 0.8, } }
+}

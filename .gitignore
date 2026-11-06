@@ -1,0 +1,6 @@
+addon-src/build/
+addon-src/.gradle/
+addon-src/libs/*.jar
+*.zip
+Contents/mods/ProjectGolfViewpoint/**/ball.jar
+vp16-src/build/
